@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    padding: 20px 0 60px 0;
+
+    background-image:
+        linear-gradient(rgba(220, 245, 230, 0.55), rgba(220, 245, 230, 0.55)),
+        url("frutigeraero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #23452f;
+    background-image:
+        linear-gradient(rgba(232, 247, 237, 0.88), rgba(220, 242, 230, 0.88)),
+        url("frutigeraero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.7;
+}
+.foto {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+.foto img {
+    width: 100%;
+    max-width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.foto .top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.4s ease;
+}
+
+.foto .bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.foto:hover .top {
+    opacity: 0;
+}
+
+.foto:hover .bottom {
+    opacity: 1;
+}
+
+h2:first-of-type {
+    margin: 90px auto 25px auto;
+    width: 90%;
+    max-width: 1100px;
+    padding: 18px 25px;
+    text-align: center;
+    color: #276749;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(44, 93, 60, 0.12);
+}
+
+h1 {
+    margin: 35px auto 70px auto;
+    width: 90%;
+    max-width: 1400px;
+    padding: 3-px 15px;
+    text-align: center;
+    color: #0a0808;
+    font-size: clamp(22px, 4vw, 52px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    
+    
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    color: #75b7ba;
+    transform: scale(1.05);
+    text-shadow: 
+        0 0 8px #04ccef,
+        0 0 18px #eceff2;
+}
+
+.running-text {
+    width: 90%;
+    max-width: 1200px;
+    margin: -45px auto 50px auto;
+    padding: 12px 20px;
+    display: block;
+    background: rgba(91, 90, 90, 0.85);
+    border: 6px solid #080808;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    width: fit-content;
+    margin: 70px auto 30px auto;
+    padding: 15px 35px;
+    color: #24613c;
+    font-size: 28px;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid #48bb78;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(44, 93, 60, 0.12);
+}
+
+div.definisi {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    text-align: justify;
+    padding: 40px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url("cloudy.png");
+background-size: cover;
+background-position: center;
+    border-radius: 25px;
+    border: 3px solid #48bb78;
+    box-shadow: 0 10px 25px rgba(38, 75, 50, 0.15);
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+div.foto {
+    flex: 1;
+    text-align: center;
+}
+
+div.foto img {
+    width: 100%;
+    max-width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+div.isi {
+    flex: 1.2;
+    font-size: 17px;
+    color: #355e42;
+}
+.paragraf {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+div.isi p {
+    margin-bottom: 18px;
+}
+
+div.isi b {
+    color: #111110;
+}
+
+div.dampak {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    text-align: justify;
+    padding: 40px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url("cloudy.png");
+background-size: cover;
+background-position: center;
+    border-radius: 25px;
+    border: 3px solid #ecc94b;
+    box-shadow: 0 10px 25px rgba(95, 83, 35, 0.15);
+
+}
+
+div.penjelasan {
+    font-size: 17px;
+    color: #5a5030;
+    margin-bottom: 35px;
+}
+.paragraf {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+div.penjelasan b {
+    color: #806b15;
+}
+
+.gambar-dampak {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 5px 20px 5px;
+    scroll-behavior: smooth;
+}
+
+.gambar-dampak > div {
+    width: 200px;
+    flex-shrink: 0;
+    padding: 15px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.gambar-dampak > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+div.gambar-dampak img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+div.gambar-dampak p {
+    margin: 12px 0 3px 0;
+    font-size: 15px;
+    color: #405b45;
+}
+
+div.pencegahan {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 70px auto;
+    text-align: justify;
+    padding: 40px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url("cloudy.png");
+background-size: cover;
+background-position: center;
+    border-radius: 25px;
+    border: 3px solid #319795;
+    box-shadow: 0 10px 25px rgba(38, 75, 70, 0.15);
+}
+
+div.pencegahan .penjelasan {
+    color: #315d50;
+}
+.paragraf {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+div.pencegahan .penjelasan b {
+    color: #247568;
+}
+
+.gambar-pencegahan {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 5px 20px 5px;
+    scroll-behavior: smooth;
+}
+
+.gambar-pencegahan > div {
+    width: 200px;
+    flex-shrink: 0;
+    padding: 15px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.gambar-pencegahan > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+div.gambar-pencegahan img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+div.gambar-pencegahan p {
+    margin: 12px 0 3px 0;
+    font-size: 15px;
+    color: #405b45;
+}
+
+div.penutup {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto 50px auto;
+    padding: 45px 35px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #276749,
+        #38a169
+    );
+    color: rgb(221, 236, 226);
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(38, 75, 50, 0.25);
+}
+
+div.penutup h2 {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    color: rgb(3, 96, 29);
+}
+
+div.penutup p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+h1,
+.definisi,
+.dampak,
+.pencegahan,
+.penutup {
+    animation: muncul 0.8s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.asap-opening {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 9999;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(80, 80, 80, 0.95),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(120, 120, 120, 0.95),
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 40% 80%,
+            rgba(70, 70, 70, 0.95),
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(150, 150, 150, 0.9),
+            transparent 45%
+        ),
+        rgba(75, 75, 75, 0.98);
+
+    filter: blur(10px);
+
+    animation: asapHilang 5s ease-out forwards;
+}
+
+@keyframes asapHilang {
+
+    0% {
+        opacity: 1;
+        filter: blur(15px);
+    }
+
+    25% {
+        opacity: 0.95;
+        filter: blur(20px);
+    }
+
+    60% {
+        opacity: 0.6;
+        filter: blur(25px);
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(35px);
+        visibility: hidden;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    h2:first-of-type {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 28px 18px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 22px;
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .definisi,
+    .dampak,
+    .pencegahan {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .foto img {
+        height: auto;
+    }
+
+    .isi {
+        font-size: 16px;
+    }
+
+    .gambar-dampak,
+    .gambar-pencegahan {
+        gap: 18px;
+    }
+
+    .penutup {
+        width: 92%;
+        padding: 35px 20px;
+    }
+}
